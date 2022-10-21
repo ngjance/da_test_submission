@@ -1,0 +1,72 @@
+
+version: 2
+
+models:
+    - name: qn1
+      description: "Question 1 model"
+      columns:
+          - name: country_name
+            description: Name of country
+            tests:
+                - not_null
+          - name: total_gmv
+            description: Total GMV per country
+            tests:
+                - not_null
+
+    - name: qn2
+      description: "Question 2 model"
+      columns:
+          - name: vendor_name
+            description: Name of vendor
+            tests:
+                - unique
+                - not_null
+          - name: customer_count
+            description: Number of unique customer
+            tests:
+                - not_null
+          - name: total_gmv
+            description: Total GMV per vendor
+            tests:
+                - not_null
+
+    - name: qn3
+      description: "Question 3 model"
+      columns:
+          - name: country_name
+            description: Name of country
+            tests:
+                - not_null
+          - name: vendor_name
+            description: Name of vendor
+            tests:
+                - unique
+                - not_null
+          - name: total_gmv
+            description: Total GMV per country and vendor
+            tests:
+                - not_null
+
+    - name: qn4
+      description: "Question 4 model"
+      description: "Question 3 model"
+      columns:
+          - name: year
+            description: Year
+            tests:
+                - not_null
+          - name: country_name
+            description: Name of country
+            tests:
+                - not_null
+          - name: vendor_name
+            description: Name of vendor
+            tests:
+                - unique
+                - not_null
+          - name: total_gmv
+            description: Total GMV per country and vendor
+            tests:
+                - not_null
+      
