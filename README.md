@@ -8,5 +8,5 @@
    orders and vendors data
 
 
-3. #### FoodPanda_Data_Analyst_Test_Jance
+3. #### Data_Analyst_Test_Jance
    Data Visualization
